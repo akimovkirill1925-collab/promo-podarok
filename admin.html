@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Admin</title><link rel="stylesheet" href="style.css"/></head>
+<body>
+<header class="topbar"><h1>Админ-панель</h1></header>
+<main class="wrap">
+  <div id="loginBox">
+    <input id="adminPass" type="password" placeholder="Пароль" />
+    <button onclick="adminLogin()">Войти</button>
+  </div>
+
+  <div id="adminPanel" class="hidden">
+    <h2>Панель управления</h2>
+    <div class="admin-row">
+      <label>Пароль админа</label>
+      <input id="newPass" placeholder="Akimov_1925" />
+      <button onclick="setNewPassword()">Сохранить</button>
+    </div>
+
+    <div class="admin-row">
+      <label>Режим рекламы</label>
+      <select id="adMode">
+        <option value="on">Вкл</option>
+        <option value="off">Выкл</option>
+      </select>
+      <button onclick="applyAdMode()">Применить</button>
+    </div>
+
+    <div class="admin-row">
+      <label>Логи (локально)</label>
+      <button onclick="loadLogs()">Показать логи</button>
+      <button onclick="clearLogs()">Очистить логи</button>
+      <div id="logs" class="logs"></div>
+    </div>
+
+    <div class="admin-row">
+      <label>Фейковые статистики</label>
+      <input id="fakeStats" placeholder="visitors:100, caught:5" />
+      <button onclick="applyFakeStats()">Применить</button>
+      <div id="statsArea"></div>
+    </div>
+
+    <div class="admin-row">
+      <label>Просмотр сайта</label>
+      <button onclick="previewSite()">Открыть сайт</button>
+    </div>
+
+    <div class="admin-row">
+      <button onclick="logoutAdmin()">Выйти</button>
+    </div>
+  </div>
+</main>
+<footer class="foot"><a href="index.html">На сайт</a></footer>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+:root{--bg:#0f1114;--card:#141518;--accent:#00e1ff;--text:#e6f7fb}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0}
+.topbar{background:#0b0c0d;padding:14px 16px;text-align:center}
+.wrap{max-width:420px;margin:18px auto;padding:12px}
+.codes{display:flex;flex-direction:column;gap:8px}
+button{padding:12px;border-radius:10px;border:0;background:var(--accent);color:#000;font-weight:700}
+.code-btn{background:#222;color:var(--text);padding:12px;border-radius:10px;border:1px solid #222}
+.foot{padding:20px;text-align:center}
+.chatbox{background:var(--card);padding:8px;border-radius:10px}
+#chatLog{min-height:80px;max-height:180px;overflow:auto;margin-bottom:8px}
+.adzone{margin:14px 0;text-align:center}
+.adbanner{background:#222;padding:12px;border-radius:10px;color:#9ff}
+.hidden{display:none}
+.admin-row{margin:10px 0}
+.logs{background:#0b0c0d;padding:10px;border-radius:8px;max-height:180px;overflow:auto}
